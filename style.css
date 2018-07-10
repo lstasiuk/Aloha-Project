@@ -82,9 +82,28 @@ a:hover {
     color: #b64036;
 }
 
-.container {
-    margin: 0 auto;
-    max-width: 1240px;
+.primary-header {
+    display: flex;
+}
+
+.logo-line img {
+    order: 0;
+    margin: 12px;
+    max-width: 125px;
+    max-height: auto;
+}
+
+.primary-navigation {
+    order: 2;
+    list-style: none;
+}
+
+.shoppingcartwrapper img {
+    order: 1;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    max-width: 50px;
+    max-height: auto;
 }
 
 .hero-banner {
@@ -113,16 +132,27 @@ a:hover {
     margin-bottom: 200px
 }
 
+.desciption h2 {
+    font-family: Playfair Display;
+    font-size: 40px;
+    text-align: center;
+}
+
+.boxes {}
+
 h4 {
     color: #e2574c;
 }
 
 .submit-button {
     background-color: #e2574c;
+    border-radius: 30px;
 }
 
 .submit-button:hover {
     background-color: #b64036;
 }
 
-@media screen and (min-width: 600px) @media display and (min-width: 900px)
+@media screen and (min-width: 600px) {}
+
+@media display and (min-width: 900px) {}
