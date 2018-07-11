@@ -84,24 +84,35 @@ a:hover {
 
 .primary-header {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.logo-line {
+    width: 50%;
 }
 
 .logo-line img {
-    order: 0;
     margin: 12px;
     max-width: 125px;
     max-height: auto;
 }
 
 .primary-navigation {
-    order: 2;
+    order: 3;
     list-style: none;
+    padding: 0;
+    margin: 50px;
+    display: flex;
+    width: 100%;
+}
+
+.shoppingcartwrapper {
+    width: 50%;
+    text-align: right;
 }
 
 .shoppingcartwrapper img {
     order: 1;
-    margin-top: 100px;
-    margin-bottom: 10px;
     max-width: 50px;
     max-height: auto;
 }
@@ -132,13 +143,68 @@ a:hover {
     margin-bottom: 200px
 }
 
-.desciption h2 {
-    font-family: Playfair Display;
-    font-size: 40px;
+.description {
     text-align: center;
 }
 
-.boxes {}
+.description h2 {
+    font-family: Playfair Display;
+    font-size: 30px;
+    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.description .heavy {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.description p {
+    line-height: 2.5;
+}
+
+.boxes {
+    text-decoration: none;
+}
+
+.most-loved-products {
+    text-align: center;
+}
+
+.most-loved-products h2 {
+    font-family: Playfair Display;
+    font-size: 30px;
+    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.most-loved-products .heavy {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.background-image {
+    text-align: center;
+}
+
+.background-image h2 {
+    font-family: Playfair Display;
+    font-size: 30px;
+    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.background-image .heavy {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.backgroud-image p {
+    line-height: 2.5;
+}
 
 h4 {
     color: #e2574c;
@@ -152,6 +218,12 @@ h4 {
 .submit-button:hover {
     background-color: #b64036;
 }
+
+.footer-info {
+    text-align: center;
+}
+
+.footer-image p {}
 
 @media screen and (min-width: 600px) {}
 
