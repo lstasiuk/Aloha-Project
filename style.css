@@ -70,7 +70,6 @@
 body {
     font-family: Raleway Light, Verdana, Sans-Serif;
     font-size: 14px;
-    font-style: bold;
 }
 
 a:link {
@@ -94,7 +93,7 @@ a:hover {
 .logo-line img {
     margin: 12px;
     max-width: 125px;
-    max-height: auto;
+    height: auto;
 }
 
 .primary-navigation {
@@ -114,7 +113,6 @@ a:hover {
 .shoppingcartwrapper img {
     order: 1;
     max-width: 50px;
-    max-height: auto;
 }
 
 .hero-banner {
@@ -202,7 +200,7 @@ a:hover {
     font-style: normal;
 }
 
-.backgroud-image p {
+.background-image p {
     line-height: 2.5;
 }
 
@@ -221,9 +219,22 @@ h4 {
 
 .footer-info {
     text-align: center;
+    list-style: none;
+    background: black;
+    color: white;
+}
+
+.footer-info span {
+    display: none;
+    text-decoration: none;
 }
 
 .footer-image p {}
+
+footer ul {
+    list-style-type: none;
+    flex: inline;
+}
 
 @media screen and (min-width: 600px) {}
 
