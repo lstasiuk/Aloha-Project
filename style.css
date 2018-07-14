@@ -64,11 +64,11 @@
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: Raleway Light, Verdana, Sans-Serif;
+    font-family: "Raleway Light", Verdana, Sans-Serif;
     font-size: 14px;
 }
 
@@ -100,19 +100,28 @@ a:hover {
     order: 3;
     list-style: none;
     padding: 0;
-    margin: 50px;
     display: flex;
-    width: 100%;
+    max-width: 100%;
+}
+
+.primary-navigation li {
+    text: #e2574c;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .shoppingcartwrapper {
     width: 50%;
     text-align: right;
+    padding-top: 10px;
 }
 
 .shoppingcartwrapper img {
     order: 1;
     max-width: 50px;
+    margin-right: 10px;
+    margin-top: 5px;
 }
 
 .hero-banner {
@@ -133,7 +142,7 @@ a:hover {
 }
 
 .hero-banner-title {
-    font-family: Playfair Display;
+    font-family: "Playfair Display";
     text-align: center;
     color: white;
     font-size: 40px;
@@ -146,7 +155,7 @@ a:hover {
 }
 
 .description h2 {
-    font-family: Playfair Display;
+    font-family: "Playfair Display";
     font-size: 30px;
     text-align: center;
     font-weight: normal;
@@ -162,8 +171,69 @@ a:hover {
     line-height: 2.5;
 }
 
-.boxes {
+.boxes a:link {
     text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.boxes a:visited {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.boxes a:hover {
+    color: lightyellow;
+    text-decoration: none;
+    text-align: center;
+}
+
+.shop-item {
+    justify-content: center;
+    align-items: center;
+}
+
+.mens-section {
+    display: flex;
+    background: url("images/mens-category.jpg");
+    background-size: cover;
+    height: 200px;
+}
+
+.trends-section {
+    display: flex;
+    background: url("images/trends-category.jpg");
+    background-size: cover;
+    height: 200px;
+}
+
+.glasses-section {
+    display: flex;
+    background: url("images/glasses-category.jpg");
+    background-size: cover;
+    height: 200px;
+}
+
+.sale-section {
+    display: flex;
+    background: url("images/sale-category.jpg");
+    background-size: cover;
+    height: 200px;
+}
+
+.bags-section {
+    display: flex;
+    background: url("images/bags-category.jpg");
+    background-size: cover;
+    height: 200px;
+}
+
+.womens-section {
+    display: flex;
+    background: url("images/womens-category.jpg");
+    background-size: cover;
+    height: 200px;
 }
 
 .most-loved-products {
@@ -171,7 +241,7 @@ a:hover {
 }
 
 .most-loved-products h2 {
-    font-family: Playfair Display;
+    font-family: "Playfair Display";
     font-size: 30px;
     text-align: center;
     font-weight: normal;
@@ -184,15 +254,55 @@ a:hover {
 }
 
 .background-image {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("images/wave-bkgd.jpg");
+    background-size: cover, cover;
     text-align: center;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
+
+/* #updates {
+    font-family: "Playfair Display";
+    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+    color: white; */
+
+.sign-up {
+    font-family: "Playfair Display";
+    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 20px;
+    color: white;
+}
+
+.stay-updated {
+    font-family: "Raleway Light";
+    text-align: center;
+    font-weight: normal;
+    font-size: 15px;
+    color: white;
+}
+
+
+/* 
 .background-image h2 {
-    font-family: Playfair Display;
+    font-family: "Playfair Display";
     font-size: 30px;
     text-align: center;
     font-weight: normal;
     font-style: italic;
+} */
+
+.featured {
+    padding-bottom: 50px;
+}
+
+.carousel-cell {
+    width: 100%;
 }
 
 .background-image .heavy {
@@ -218,10 +328,35 @@ h4 {
 }
 
 .footer-info {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     text-align: center;
-    list-style: none;
-    background: black;
+    background: #242424;
     color: white;
+    height: 300px;
+}
+
+.address span {
+    display: flex;
+    color: #969696;
+    text-align: center;
+}
+
+
+/* address padding for black section to display address info and to be much bigger*/
+
+.social {
+    display: flex;
+    list-style: none;
+    box-sizing: border-box;
+    color: white;
+    padding: 0 20px;
+}
+
+.social a {
+    color: white;
+    padding: 0 20px;
 }
 
 .footer-info span {
@@ -229,13 +364,23 @@ h4 {
     text-decoration: none;
 }
 
+
+/* 
+.footer-info li {
+    color: white;
+    list-style: column;
+} */
+
 .footer-image p {}
 
-footer ul {
-    list-style-type: none;
-    flex: inline;
+@media screen and (min-width: 600px) {
+    .carousel-cell {
+        width: 50%;
+    }
 }
 
-@media screen and (min-width: 600px) {}
-
-@media display and (min-width: 900px) {}
+@media screen and (min-width: 900px) {
+    .carousel-cell {
+        width: 25%;
+    }
+}
