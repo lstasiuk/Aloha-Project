@@ -88,6 +88,7 @@ a:hover {
 
 .logo-line {
     width: 50%;
+    color: #e2574c
 }
 
 .logo-line img {
@@ -105,7 +106,7 @@ a:hover {
 }
 
 .primary-navigation li {
-    text: #e2574c;
+    color: #e2574c;
     text-align: center;
     padding-right: 20px;
     padding-left: 20px;
@@ -254,21 +255,22 @@ a:hover {
 }
 
 .background-image {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("images/wave-bkgd.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("images/wave-bkgd.jpg");
     background-size: cover, cover;
     text-align: center;
     height: 250px;
     background-repeat: no-repeat;
     background-position: bottom;
+    margin-bottom: 8px;
 }
 
-
-/* #updates {
+#updates {
     font-family: "Playfair Display";
     text-align: center;
     font-weight: normal;
     font-style: italic;
-    color: white; */
+    color: white;
+}
 
 .sign-up {
     font-family: "Playfair Display";
@@ -287,22 +289,13 @@ a:hover {
     color: white;
 }
 
-
-/* 
-.background-image h2 {
-    font-family: "Playfair Display";
-    font-size: 30px;
-    text-align: center;
-    font-weight: normal;
-    font-style: italic;
-} */
-
 .featured {
     padding-bottom: 50px;
 }
 
 .carousel-cell {
     width: 100%;
+    text-align: center;
 }
 
 .background-image .heavy {
@@ -343,15 +336,12 @@ h4 {
     text-align: center;
 }
 
-
-/* address padding for black section to display address info and to be much bigger*/
-
 .social {
     display: flex;
     list-style: none;
     box-sizing: border-box;
     color: white;
-    padding: 0 20px;
+    padding: 50px 5px;
 }
 
 .social a {
@@ -364,23 +354,52 @@ h4 {
     text-decoration: none;
 }
 
-
-/* 
 .footer-info li {
     color: white;
     list-style: column;
-} */
+}
 
 .footer-image p {}
 
 @media screen and (min-width: 600px) {
+    body {
+        font-family: "Raleway Light", Verdana, Sans-Serif;
+        font-size: 16px;
+    }
+    .shoppingcartwrapper img {
+        order: 2;
+        max-width: 50px;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+    .primary-navigation {
+        order: 1;
+        list-style: none;
+        padding: 0;
+        display: flex;
+        max-width: 100%;
+    }
+    .primary-navigation li {
+        color: #e2574c;
+        text-align: center;
+        justify-content: center;
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: justify;
+    }
     .carousel-cell {
         width: 50%;
+        text-align: center;
     }
 }
 
 @media screen and (min-width: 900px) {
+    body {
+        font-family: "Raleway Light", Verdana, Sans-Serif;
+        font-size: 16px;
+    }
     .carousel-cell {
         width: 25%;
+        text-align: center;
     }
 }
