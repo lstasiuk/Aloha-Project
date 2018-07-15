@@ -103,6 +103,7 @@ a:hover {
 }
 
 .primary-navigation {
+    color: #e2574c;
     order: 3;
     list-style: none;
     padding: 0;
@@ -136,7 +137,7 @@ a:hover {
     padding-top: 20px;
     padding-bottom: 20px;
     background-repeat: no-repeat;
-    background-position: center, center 60px, center;
+    background-position: center, center 40px, center;
 }
 
 .hero-banner-subtitle {
@@ -166,6 +167,7 @@ a:hover {
     text-align: center;
     font-weight: normal;
     font-style: italic;
+    position: relative;
 }
 
 .description .heavy {
@@ -199,7 +201,6 @@ a:hover {
     justify-content: center;
     align-items: center;
     font-size: 25px;
-    font-style: bold;
 }
 
 .mens-section {
@@ -215,7 +216,8 @@ a:hover {
     background-size: 100%;
     height: 200px;
     width: 50%;
-    justify-content: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .glasses-section {
@@ -224,6 +226,8 @@ a:hover {
     background-size: 100%;
     height: 200px;
     width: 50%;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .sale-section {
@@ -281,6 +285,7 @@ a:hover {
     margin-bottom: 8px;
     padding-bottom: 20px;
     background-position: center, center;
+    padding-top: 30px;
 }
 
 #updates {
@@ -428,20 +433,117 @@ h4 {
         margin-top: 40px;
         margin-bottom: 300px
     }
-    .container h2 {
-        justify-content: wrap;
+    .description {
+        text-align: center;
+    }
+    .description h2 {
+        font-family: "Playfair Display";
+        font-size: 30px;
+        text-align: center;
+        font-weight: normal;
+        font-style: italic;
+        position: relative;
+    }
+    .description .heavy {
+        font-weight: bold;
+        font-style: normal;
+    }
+    .description p {
+        line-height: 2.5;
     }
     .carousel-cell {
         width: 50%;
         text-align: center;
     }
-    .social li {
+    .background-image {
+        background-image: linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("images/wave-bkgd.jpg");
+        background-size: cover, cover;
+        text-align: center;
+        height: 250px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        margin-bottom: 8px;
+        padding-bottom: 20px;
+        background-position: center, center;
+    }
+    #updates {
+        font-family: "Playfair Display";
+        text-align: center;
+        font-weight: normal;
+        font-style: italic;
+        color: white;
+    }
+    .sign-up {
+        font-family: "Playfair Display";
+        text-align: center;
+        font-weight: normal;
+        font-style: italic;
+        font-size: 20px;
+        color: white;
+    }
+    .stay-updated {
+        font-family: "Raleway Light";
+        text-align: center;
+        font-weight: normal;
+        font-size: 15px;
+        color: white;
+    }
+    .featured {
+        padding-bottom: 50px;
+    }
+    .carousel-cell {
+        width: 100%;
+        text-align: center;
+    }
+    .background-image .heavy {
+        font-weight: bold;
+        font-style: normal;
+    }
+    .background-image p {
+        line-height: 2.5;
+    }
+    h4 {
+        color: #e2574c;
+    }
+    .submit-button {
+        background-color: #e2574c;
+        border-radius: 30px;
+    }
+    .submit-button:hover {
+        background-color: #b64036;
+    }
+    .footer-info {
         display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+        background: #242424;
+        color: white;
+        height: 300px;
+    }
+    .address span {
+        display: flex;
+        color: #969696;
+        text-align: center;
+    }
+    .social {
+        display: flex;
+        list-style: none;
         box-sizing: border-box;
         color: white;
-        padding: 0
+        padding: 50px 5px;
+    }
+    .social a {
+        color: white;
+        padding: 0 20px;
+    }
+    .footer-info span {
+        display: none;
+        text-decoration: none;
+    }
+    .footer-info li {
+        color: white;
+        list-style: column;
     }
 }
 

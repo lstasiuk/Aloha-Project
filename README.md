@@ -17,4 +17,4 @@ Major learning from this project:
 - @media-links
 - basic Javascript and jQuery
 
-I also felt it was important for me to go back to the beginning of the HTML and CSS courses to start from the beginning so more could make sense to me.  I feel with that under my belt I will be able to move forward from this point.
+I also felt it was important for me to go back to the beginning of the HTML and CSS courses to start from the beginning so more could make sense to me.  I still feel very behind on concepts but am hoping things will become clearer.  
