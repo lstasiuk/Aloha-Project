@@ -193,6 +193,7 @@ a:hover {
 .shop-item {
     justify-content: center;
     align-items: center;
+    font: 20px;
 }
 
 .mens-section {
@@ -390,6 +391,14 @@ h4 {
     .carousel-cell {
         width: 50%;
         text-align: center;
+    }
+    .social li {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        box-sizing: border-box;
+        color: white;
+        padding: 0
     }
 }
 

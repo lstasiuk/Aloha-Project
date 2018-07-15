@@ -16,3 +16,5 @@ Major learning from this project:
 - padding and margins
 - @media-links
 - basic Javascript and jQuery
+
+I also felt it was important for me to go back to the beginning of the HTML and CSS courses to start from the beginning so more could make sense to me.  I feel with that under my belt I will be able to move forward from this point.
