@@ -118,6 +118,14 @@ a:hover {
     padding-left: 20px;
 }
 
+.primary-navigation li a {
+    color: #e2574c;
+}
+
+.primary-navigation li a:hover {
+    color: #b64036;
+}
+
 .shoppingcartwrapper {
     width: 50%;
     text-align: right;
@@ -179,6 +187,11 @@ a:hover {
     line-height: 2.5;
 }
 
+.boxes {
+    display: flex;
+    flex-flow: wrap;
+}
+
 .boxes a:link {
     text-decoration: none;
     text-align: center;
@@ -198,6 +211,7 @@ a:hover {
 }
 
 .shop-item {
+    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 25px;
@@ -208,6 +222,7 @@ a:hover {
     background: url("images/mens-category.jpg");
     background-size: cover;
     height: 200px;
+    width: 100%;
 }
 
 .trends-section {
@@ -251,6 +266,7 @@ a:hover {
     background: url("images/womens-category.jpg");
     background-size: cover;
     height: 200px;
+    width: 100%;
 }
 
 .most-loved-products {
